@@ -1,9 +1,11 @@
+<!--
 <div align="center">
+-->
 YOLOv5 🚀 is the world's most loved vision AI, representing <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
-</br>
-![ball]()
 
-</br>
+![ball](https://github.com/Black-Basil-Technologies-Pvt-Ltd/cricket-animation/blob/387dbf5a0e15b60eee70b863f6e748faa4d765ff/video/cricketBallTracking.gif)
+ 
+
 We have made changes in this repo <a href="https://github.com/ultralytics/yolov5">Ultralytics_yolov5</a> and trained these yolov5s.pt models from scratch on our cricket dataset.
 
 you can download the weights from google drive link <a href='https://drive.google.com/drive/folders/1F6dBoGrqOBGPV_4efOYsNGH96RKpFFRo?usp=sharing'> Drive link</a> 
@@ -25,6 +27,5 @@ Different yolov5 model that are available which can further be used to enhanched
 | [YOLOv5x6](https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5x6.pt)<br>+ [TTA] | 1280<br>1536          | 55.0<br>**55.8**     | 72.7<br>**72.7**  | 3136<br>-                    | 26.2<br>-                     | 19.4<br>-                      | 140.7<br>-         | 209.8<br>-             |
 
 
-</div>
 
 
