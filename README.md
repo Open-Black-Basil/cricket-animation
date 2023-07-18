@@ -1,10 +1,7 @@
 <div align="center">
 YOLOv5 🚀 is the world's most loved vision AI, representing <a href="https://ultralytics.com">Ultralytics</a> open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
 </br>
-<video controls>
-  <source src="video/cr2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/Black-Basil-Technologies-Pvt-Ltd/cricket-animation/assets/139438300/3fc7732f-3528-487f-9ced-e3ca8f0ff272
 
 </br>
 We have made changes in this repo <a href="https://github.com/ultralytics/yolov5">Ultralytics_yolov5</a> and trained these yolov5s.pt models from scratch on our cricket dataset.
