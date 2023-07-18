@@ -8,7 +8,7 @@ YOLOv5 🚀 is the world's most loved vision AI, representing <a href="https://u
 
 We have made changes in this repo <a href="https://github.com/ultralytics/yolov5">Ultralytics_yolov5</a> and trained these yolov5s.pt models from scratch on our cricket dataset.
 
-you can download the weights from google drive link <a href='https://drive.google.com/drive/folders/1F6dBoGrqOBGPV_4efOYsNGH96RKpFFRo?usp=sharing'> Drive link</a> 
+you can download our trained weights from google drive link <a href='https://drive.google.com/drive/folders/1F6dBoGrqOBGPV_4efOYsNGH96RKpFFRo?usp=sharing'> Drive link</a> 
 
 Different yolov5 model that are available which can further be used to enhanched the training accuracy -- 
 
