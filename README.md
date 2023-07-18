@@ -1,3 +1,6 @@
+<!--
+
+<p>
 <div align="center">
   <p>
     <a align="center" href="https://ultralytics.com/yolov5" target="_blank">
@@ -450,26 +453,12 @@ Get started in seconds with our verified environments. Click each icon below for
 
 ## <div align="center">Contribute</div>
 
-We love your input! We want to make contributing to YOLOv5 as easy and transparent as possible. Please see our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) to get started, and fill out the [YOLOv5 Survey](https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey) to send us feedback on your experiences. Thank you to all our contributors!
-
-<!-- SVG image from https://opencollective.com/ultralytics/contributors.svg?width=990 -->
-
-<a href="https://github.com/ultralytics/yolov5/graphs/contributors">
-<img src="https://github.com/ultralytics/assets/raw/main/im/image-contributors.png" /></a>
 
 ## <div align="center">License</div>
 
-YOLOv5 is available under two different licenses:
-
-- **AGPL-3.0 License**: See [LICENSE](https://github.com/ultralytics/yolov5/blob/master/LICENSE) file for details.
-- **Enterprise License**: Provides greater flexibility for commercial product development without the open-source requirements of AGPL-3.0. Typical use cases are embedding Ultralytics software and AI models in commercial products and applications. Request an Enterprise License at [Ultralytics Licensing](https://ultralytics.com/license).
-
 ## <div align="center">Contact</div>
-
-For YOLOv5 bug reports and feature requests please visit [GitHub Issues](https://github.com/ultralytics/yolov5/issues), and join our [Discord](https://discord.gg/n6cFeSPZdD) community for questions and discussions!
-
 <br>
-<div align="center">
+<!-- <div align="center">
   <a href="https://github.com/ultralytics" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="" /></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="" />
@@ -491,5 +480,10 @@ For YOLOv5 bug reports and feature requests please visit [GitHub Issues](https:/
   <a href="https://discord.gg/n6cFeSPZdD" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/blob/main/social/logo-social-discord.png" width="3%" alt="" /></a>
 </div>
+ -->
 
-[tta]: https://docs.ultralytics.com/yolov5/tutorials/test_time_augmentation
+
+
+
+```
+-->
