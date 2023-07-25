@@ -28,4 +28,21 @@ Different yolov5 model that are available which can further be used to enhanched
 
 
 
+Basic Requirements 
+```commandline
+pip install ultralytics
 
+git clone https://github.com/ultralytics/yolov5  # clone
+cd yolov5
+pip install -r requirements.txt  # install
+```
+
+-------------Train on your custom DATA ---------------
+
+```bash
+python train.py --data dataset.yaml --epochs 150 --weights '' --cfg yolov5n.yaml  --batch-size 128
+                                                                 yolov5s                    64
+                                                                 yolov5m                    40
+                                                                 yolov5l                    24
+                                                                 yolov5x                    16
+```
