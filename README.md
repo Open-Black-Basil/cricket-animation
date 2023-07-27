@@ -46,7 +46,7 @@ python train.py --data dataset.yaml --epochs 150 --weights '' --cfg yolov5n.yaml
                                                                  yolov5l                    24
                                                                  yolov5x                    16
 ```
-------------------------Inference on Video and Image Data------------------------
+------------------------Inference on Video and Image Data------------------------ </br>
 For Ball Tracking
 ```bash
 python detect.py --weights yolov5s.pt --balltrek --source 0                               # webcam
