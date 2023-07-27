@@ -68,7 +68,7 @@ def check_pil_font(font=FONT, size=10):
         except URLError:  # not online
             return ImageFont.load_default()
 
-ball_detection =[]
+ball_detection =[] #list of cordinates of ball xy in the image
 class Annotator:
     # YOLOv5 Annotator for train/val mosaics and jpgs and detect/hub inference annotations
     def __init__(self, im, line_width=None, font_size=None, font='Arial.ttf', pil=False, example='abc'):
@@ -102,11 +102,12 @@ class Annotator:
 
         return cartoon
     
-    def box_label(self, box, label='', color=(128, 128, 128), txt_color=(255, 255, 255)):
+    def box_label(self, box, label='', balltrek=False, cartoon=False, color=(128, 128, 128), txt_color=(255, 255, 255)):
         # ball detection code
         global ball_detection
+        print(f"cartoon= {cartoon}")
         
-        if label.startswith("ball"):
+        if label.startswith("ball") and balltrek:
             center_x = (int(box[0]) + int(box[2])) // 2
             center_y = (int(box[1]) + int(box[3])) // 2
             ball_detection.append([center_x,center_y])
@@ -119,19 +120,11 @@ class Annotator:
                     # print(f"pt1={pt1} and pt2 = {pt2}")
                     cv2.line(self.im, pt1, pt2, color, 7)
         
-        cartoon = self.convert_to_cartoon(self.im)
-        self.im = cartoon
-        # print(f"orginal image -- {self.im.shape}")
-        # cartoon.resize((100,100,3))
-        # print(f"cartoon -- {cartoon.shape}")
-        # # self.im.paste(resized_image,(0,0))
-        # x_offset = 30
-        # y_offset = 170
+        if cartoon==True:
+            print(f"cartoon= yes")
+            cartoon = self.convert_to_cartoon(self.im)
+            self.im = cartoon
         
-        # x_end = x_offset + cartoon.shape[1]
-        # y_end = y_offset + cartoon.shape[0]
-        # self.im[y_offset:y_end,x_offset:x_end] = cartoon
-
         # Add one xyxy box to image with label
         if self.pil or not is_ascii(label):
             # print(f" self box -=={box} and width= {self.lw}")

@@ -83,6 +83,9 @@ def run(
         half=False,  # use FP16 half-precision inference
         dnn=False,  # use OpenCV DNN for ONNX inference
         vid_stride=1,  # video frame-rate stride
+        balltrek=False, #ball tracking
+        cartoon=False, #cartoonize the video
+        impact_det=False, #to detect the impaction of bat and ball 
 ):
     
     def calculate_iou(box1, box2):
@@ -197,7 +200,7 @@ def run(
             imc = im0.copy() if save_crop else im0  # for save_crop
             annotator = Annotator(im0, line_width=line_thickness, example=str(names))
 
-             # my code 
+            # my code 
             bat = []
             ball = []
             if len(det):
@@ -231,17 +234,18 @@ def run(
                             ball.append(xyxy)
                             # print(f"xywh---{xywh}")
                             # print(f"xyxy2xywh---{type(xyxy2xywh)}")
-                            centerX = xyxy[0].item()
-                            centerY = xyxy[1].item()
+                            # centerX = xyxy[0].item()
+                            # centerY = xyxy[1].item()
                             # print(centerX)
-                            ball_detection.append([int(centerX),int(centerY)])
+                            # ball_detection.append([int(centerX),int(centerY)])
                             # print(f"ball -- {ball_detection}")
-                        annotator.box_label(xyxy, label, color=colors(c, True))
+                        annotator.box_label(xyxy, label, balltrek, cartoon, color=colors(c, True), txt_color=(255, 255, 255))
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
             # My CODE
             iou = 0
-            if ball and bat:
+            print(f"imapct = {impact_det}")
+            if (ball and bat) and impact_det==True:
                 # for bb_ball in ball:
                 #     for bb_bat in bat:
                 iou = calculate_iou(ball[-1],bat[-1])
@@ -355,6 +359,9 @@ def parse_opt():
     parser.add_argument('--half', action='store_true', help='use FP16 half-precision inference')
     parser.add_argument('--dnn', action='store_true', help='use OpenCV DNN for ONNX inference')
     parser.add_argument('--vid-stride', type=int, default=1, help='video frame-rate stride')
+    parser.add_argument('--balltrek', action='store_true', help='ball tracking results')
+    parser.add_argument('--cartoon', action="store_true", help="cartoonize your video")
+    parser.add_argument('--impact-det', action="store_true", help="detect impact of ball on bat")
     opt = parser.parse_args()
     opt.imgsz *= 2 if len(opt.imgsz) == 1 else 1  # expand
     print_args(vars(opt))
