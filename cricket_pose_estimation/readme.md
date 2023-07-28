@@ -15,6 +15,6 @@
 </li>
 </ul>
 
-![video2](cricket_pose_estimation/results/keypoint_shot_detection.gif)
+![video2](https://github.com/Black-Basil-Technologies-Pvt-Ltd/cricket-animation/blob/edd0b7ed3db8387c5d0a6f29c2a999f1630ff569/cricket_pose_estimation/results/keypoint_shot_detection.gif)
 
 
