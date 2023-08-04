@@ -73,7 +73,7 @@ python detect.py --weights yolov5s.pt --cartoon --vid.mp4                       
 # SHOT Detection
 
 ```bash
-cd                          
+cd cricket_pose_estimation/                       
 ```
 
 <h1>Shot Detection code in cricket batsman video</h1>
